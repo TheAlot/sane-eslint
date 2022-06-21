@@ -1,0 +1,14 @@
+{
+  "name": "sane-example",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "eslint-config-sane": "workspace:*"
+  },
+  "scripts": {
+    "lint": "eslint . --config './.eslintrc.yml'"
+  },
+  "devDependencies": {
+    "eslint": "8.17.0",
+    "typescript": "4.7.3"
+  }
+}
