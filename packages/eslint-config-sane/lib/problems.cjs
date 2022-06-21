@@ -12,7 +12,7 @@ module.exports = {
   'no-constant-binary-expression': 'error',
   'no-constant-condition': 'error',
   'no-constructor-return': 'error', // you can return values in constructors, but this won't return your newly created object.
-  'no-control-regex:': 'error',
+  'no-control-regex': 'error',
   'no-debugger': 'warn',
   'no-dupe-args': 'error',
   'no-dupe-class-members': 'error',
@@ -50,6 +50,9 @@ module.exports = {
   'no-unsafe-negation': 'error',
   'no-unsafe-optional-chaining': 'error',
   'no-unused-private-class-members': 'error',
+
+  // Disallows unused variables.
+  // https://eslint.org/docs/rules/no-unused-vars
   'no-unused-vars': 'error',
   'no-use-before-define': 'error', // ? should possibly be turned off for functions
   'no-useless-backreference': 'error',
