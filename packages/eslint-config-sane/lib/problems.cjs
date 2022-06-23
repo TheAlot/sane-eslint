@@ -50,11 +50,13 @@ module.exports = {
   'no-unsafe-negation': 'error',
   'no-unsafe-optional-chaining': 'error',
   'no-unused-private-class-members': 'error',
-
-  // Disallows unused variables.
-  // https://eslint.org/docs/rules/no-unused-vars
   'no-unused-vars': 'error',
-  'no-use-before-define': 'error', // ? should possibly be turned off for functions
+  'no-use-before-define': [
+    'error',
+    {
+      functions: false,
+    },
+  ],
   'no-useless-backreference': 'error',
   'require-atomic-updates': 'error',
   'use-isnan': 'error',

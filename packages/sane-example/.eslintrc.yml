@@ -1,2 +1,5 @@
 extends:
   - eslint-config-sane
+env:
+  browser: true
+  node: true
