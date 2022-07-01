@@ -131,4 +131,36 @@ module.exports = {
   'object-shorthand': ['error', 'always'],
   // TODO: when writing typescript, this might not be desireable
   'one-var': ['error', { initialized: 'never', uninitialized: 'consecutive' }],
+  'one-var-declaration-per-line': ['error', 'initializations'],
+  'operator-assignment': ['error', 'always'],
+  'prefer-arrow-callback': 'error',
+  'prefer-const': 'error',
+  // TODO: Might need to turn off for arrays
+  'prefer-destructuring': 'error',
+  'prefer-exponentiation-operator': 'error',
+  // Used in regexp, read more here:
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges#using_groups
+  'prefer-named-capture-group': 'error',
+  // Don't know why this shouldn't be allowed
+  'prefer-numeric-literals': 'off',
+  // this shouldn't be used until we only write code in ES2022
+  'prefer-object-has-own': 'off',
+  'prefer-object-spread': 'error',
+  'prefer-promise-reject-errors': 'error',
+  'prefer-regex-literals': 'off',
+  'prefer-rest-params': 'error',
+  'prefer-spread': 'error',
+  'prefer-template': 'error',
+  'quote-props': ['error', 'as-needed', { unnecessary: true }],
+  radix: 'error',
+  'require-await': 'off',
+  // ? never really heard about this
+  'require-unicode-regexp': 'off',
+  'require-yield': 'error',
+  'sort-imports': 'error',
+  'spaced-comment': 'error',
+  strict: 'error',
+  'symbol-description': 'error',
+  'vars-on-top': 'error',
+  yoda: 'off',
 };
